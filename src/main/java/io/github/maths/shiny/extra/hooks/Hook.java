@@ -1,4 +1,4 @@
-package io.github.maths.shiny.hooks;
+package io.github.maths.shiny.extra.hooks;
 
 public interface Hook {
     String getName();

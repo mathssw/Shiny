@@ -1,9 +1,9 @@
-package io.github.maths.shiny.storage.impl;
+package io.github.maths.shiny.extra.storage.impl;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import io.github.maths.shiny.Shiny;
-import io.github.maths.shiny.storage.StorageProvider;
+import io.github.maths.shiny.extra.storage.StorageProvider;
 import io.github.maths.shiny.utils.chat.CC;
 
 import java.io.File;

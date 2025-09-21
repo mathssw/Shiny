@@ -1,13 +1,13 @@
 package io.github.maths.shiny;
 
 import io.github.maths.shiny.commands.CommandManager;
-import io.github.maths.shiny.hooks.HookManager;
+import io.github.maths.shiny.extra.hooks.HookManager;
 import io.github.maths.shiny.listeners.*;
 import io.github.maths.shiny.managers.*;
 import io.github.maths.shiny.managers.battlepass.BattlepassManager;
 import io.github.maths.shiny.managers.battlepass.QuestManager;
 import io.github.maths.shiny.managers.battlepass.QuestsChecker;
-import io.github.maths.shiny.storage.StorageManager;
+import io.github.maths.shiny.extra.storage.StorageManager;
 import io.github.maths.shiny.utils.ConfigurationFile;
 import io.github.maths.shiny.utils.chat.CC;
 import org.bukkit.Bukkit;
@@ -55,8 +55,8 @@ public class ShinyLoader {
     private void setupConfigs() {
         plugin.setFormat(new SimpleDateFormat("MM/dd/yy HH:mm:ss"));
         plugin.setConfig(new ConfigurationFile(plugin, "config.yml"));
-        plugin.setHooksConfig(new ConfigurationFile(plugin, "hooks.yml"));
-        plugin.setStorageConfig(new ConfigurationFile(plugin, "storage.yml"));
+        plugin.setHooksConfig(new ConfigurationFile(plugin, "impl/hooks.yml"));
+        plugin.setStorageConfig(new ConfigurationFile(plugin, "impl/storage.yml"));
         plugin.setHighrollerConfig(new ConfigurationFile(plugin, "highroller.yml"));
         plugin.setBattlepassConfig(new ConfigurationFile(plugin, "battlepass/battlepass.yml"));
         plugin.setRewardConfig(new ConfigurationFile(plugin, "battlepass/rewards.yml"));
@@ -167,8 +167,8 @@ public class ShinyLoader {
 
     private void reloadConfigs() {
         plugin.setConfig(new ConfigurationFile(plugin, "config.yml"));
-        plugin.setHooksConfig(new ConfigurationFile(plugin, "hooks.yml"));
-        plugin.setStorageConfig(new ConfigurationFile(plugin, "storage.yml"));
+        plugin.setHooksConfig(new ConfigurationFile(plugin, "impl/hooks.yml"));
+        plugin.setStorageConfig(new ConfigurationFile(plugin, "impl/storage.yml"));
         plugin.setHighrollerConfig(new ConfigurationFile(plugin, "highroller.yml"));
         new PlaceholderManager();
         plugin.setFreeRankManager(new FreeRankManager());

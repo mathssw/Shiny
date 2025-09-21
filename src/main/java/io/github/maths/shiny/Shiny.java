@@ -1,12 +1,14 @@
 package io.github.maths.shiny;
 
-import io.github.maths.shiny.hooks.HookManager;
+import io.github.maths.shiny.extra.hooks.HookManager;
 import io.github.maths.shiny.managers.*;
 import io.github.maths.shiny.managers.battlepass.BattlepassManager;
 import io.github.maths.shiny.managers.battlepass.QuestManager;
-import io.github.maths.shiny.storage.StorageManager;
+import io.github.maths.shiny.extra.storage.StorageManager;
 import io.github.maths.shiny.utils.ConfigurationFile;
 import io.github.maths.shiny.utils.chat.CC;
+import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -16,10 +18,12 @@ import java.text.SimpleDateFormat;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ConcurrentHashMap;
 
+@Getter
+@Setter
 public final class Shiny extends JavaPlugin {
 
+    @Getter
     private static Shiny instance;
     private ShinyLoader loader;
 
@@ -33,9 +37,6 @@ public final class Shiny extends JavaPlugin {
     private ConfigurationFile rewardConfig;
 
     private SimpleDateFormat format;
-    public BukkitTask runnable;
-    public Map<OfflinePlayer, String> prefixes;
-
     private StorageManager storageManager;
     private HookManager hookManager;
     private FreeRankManager freeRankManager;
@@ -44,6 +45,9 @@ public final class Shiny extends JavaPlugin {
     private BattlepassManager battlepassManager;
     private QuestManager questManager;
     private ChatReactionManager chatReactionManager;
+
+    public BukkitTask runnable;
+    public Map<OfflinePlayer, String> prefixes;
 
     @Override
     public void onEnable() {
@@ -58,6 +62,7 @@ public final class Shiny extends JavaPlugin {
         if (loader != null) {
             loader.unload();
         }
+        instance = null;
     }
 
     public void reloadConfig() {
@@ -103,145 +108,5 @@ public final class Shiny extends JavaPlugin {
 
     public CompletableFuture<Object> loadPlayerData(UUID playerId, String collection, Class<?> type) {
         return storageManager.loadPlayerData(playerId, collection, type);
-    }
-
-    public static Shiny getInstance() {
-        return instance;
-    }
-
-    public ConfigurationFile getConfig() {
-        return config;
-    }
-
-    public ConfigurationFile getHooksConfig() {
-        return hooksConfig;
-    }
-
-    public ConfigurationFile getStorageConfig() {
-        return storageConfig;
-    }
-
-    public ConfigurationFile getHighrollerConfig() {
-        return highrollerConfig;
-    }
-
-    public ConfigurationFile getBattlepassConfig() {
-        return battlepassConfig;
-    }
-
-    public ConfigurationFile getEnderchestConfig() {
-        return enderchestConfig;
-    }
-
-    public ConfigurationFile getQuestConfig() {
-        return questConfig;
-    }
-
-    public ConfigurationFile getRewardConfig() {
-        return rewardConfig;
-    }
-
-    public SimpleDateFormat getFormat() {
-        return format;
-    }
-
-    public StorageManager getStorageManager() {
-        return storageManager;
-    }
-
-    public HookManager getHookManager() {
-        return hookManager;
-    }
-
-    public FreeRankManager getFreeRankManager() {
-        return freeRankManager;
-    }
-
-    public HighrollerManager getHighrollerManager() {
-        return highrollerManager;
-    }
-
-    public EnderchestManager getEnderchestManager() {
-        return enderchestManager;
-    }
-
-    public BattlepassManager getBattlepassManager() {
-        return battlepassManager;
-    }
-
-    public QuestManager getQuestManager() {
-        return questManager;
-    }
-
-    public ChatReactionManager getChatReactionManager() {
-        return chatReactionManager;
-    }
-
-    public void setConfig(ConfigurationFile config) {
-        this.config = config;
-    }
-
-    public void setHooksConfig(ConfigurationFile hooksConfig) {
-        this.hooksConfig = hooksConfig;
-    }
-
-    public void setStorageConfig(ConfigurationFile storageConfig) {
-        this.storageConfig = storageConfig;
-    }
-
-    public void setHighrollerConfig(ConfigurationFile highrollerConfig) {
-        this.highrollerConfig = highrollerConfig;
-    }
-
-    public void setBattlepassConfig(ConfigurationFile battlepassConfig) {
-        this.battlepassConfig = battlepassConfig;
-    }
-
-    public void setEnderchestConfig(ConfigurationFile enderchestConfig) {
-        this.enderchestConfig = enderchestConfig;
-    }
-
-    public void setQuestConfig(ConfigurationFile questConfig) {
-        this.questConfig = questConfig;
-    }
-
-    public void setRewardConfig(ConfigurationFile rewardConfig) {
-        this.rewardConfig = rewardConfig;
-    }
-
-    public void setFormat(SimpleDateFormat format) {
-        this.format = format;
-    }
-
-    public void setStorageManager(StorageManager storageManager) {
-        this.storageManager = storageManager;
-    }
-
-    public void setHookManager(HookManager hookManager) {
-        this.hookManager = hookManager;
-    }
-
-    public void setFreeRankManager(FreeRankManager freeRankManager) {
-        this.freeRankManager = freeRankManager;
-    }
-
-    public void setHighrollerManager(HighrollerManager highrollerManager) {
-        this.highrollerManager = highrollerManager;
-    }
-
-    public void setEnderchestManager(EnderchestManager enderchestManager) {
-        this.enderchestManager = enderchestManager;
-    }
-
-    public void setBattlepassManager(BattlepassManager battlepassManager) {
-        this.battlepassManager = battlepassManager;
-    }
-
-    public void setQuestManager(QuestManager questManager) {
-        this.questManager = questManager;
-    }
-
-    public void setChatReactionManager(ChatReactionManager chatReactionManager) {
-        this.chatReactionManager = chatReactionManager;
     }
 }

@@ -1,4 +1,4 @@
-package io.github.maths.shiny.storage;
+package io.github.maths.shiny.extra.storage;
 
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;

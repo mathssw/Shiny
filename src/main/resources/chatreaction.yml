@@ -1,42 +1,128 @@
-Enabled: true # You would need to restart the server to take effect
-Between-Time: 5 # How much minutes until the next question
-Chats-Time: 15 # Seconds that the questions will remain
+Enabled: true
+Between-Time: 5
+Chats-Time: 15
 Message:
   Question:
-    - "&e&m---------------------------------"
-    - "&e&lChat Reaction"
-    - "&6Resolve this Question to get a reward"
-    - "&6Question: &e%question%"
-    - "&e&m---------------------------------"
+    - "&c&m---------------------------------"
+    - "&c&lCOMBAT CHALLENGE"
+    - "&4Solve this to earn battlefield rewards"
+    - "&4Question: &c%question%"
+    - "&c&m---------------------------------"
   Scramble:
-    - "&e&m---------------------------------"
-    - "&e&lChat Reaction"
-    - "&6Unscramble this word to get a reward"
-    - "&6Word: &e%word%"
-    - "&e&m---------------------------------"
+    - "&c&m---------------------------------"
+    - "&c&lWORD WARFARE"
+    - "&4Unscramble this word for combat loot"
+    - "&4Scrambled: &c%word%"
+    - "&c&m---------------------------------"
   Win:
-    - "&e&m---------------------------------"
-    - "&e&lChat Reaction"
-    - "&a%player% &6Solved the Challenge in &e%time%"
-    - "&6The answer was: &e%word%"
-    - "&e&m---------------------------------"
+    - "&c&m---------------------------------"
+    - "&c&lCHALLENGE DOMINATED"
+    - "&6%player% &4conquered the challenge in &c%time%"
+    - "&4Answer: &c%word%"
+    - "&c&m---------------------------------"
   End:
-    - "&e&m---------------------------------"
-    - "&e&lChat Reaction"
-    - "&6The challenge was not solved in time"
-    - "&6The answer was: &e%word%"
-    - "&e&m---------------------------------"
-  Player-Win: "&aCongratulations you solved the challenge and received a reward" # Leave empty to disable
-  Chat-Cancel: "&cThe Challenge was cancelled by a staff member"
+    - "&c&m---------------------------------"
+    - "&c&lCHALLENGE FAILED"
+    - "&4No warrior was fast enough"
+    - "&4Answer: &c%word%"
+    - "&c&m---------------------------------"
+  Player-Win: "&aYou dominated the challenge and earned combat rewards"
+  Chat-Cancel: "&cThe challenge was terminated by staff"
   Win-Message: true
+
 Chats:
-  Example:
-    Message: "How much is 7*7?"
+  PvP_Math:
+    Message: "If you kill 3 players and each gives 5 XP, how much total XP?"
     Type: Question
-    Answer: "49"
-    Reward: "give %player% diamond 32"
-  Example1:
-    Message: "Water"
+    Answer: "15"
+    Reward: "give %player% diamond_sword 1"
+
+  Combat_Calculation:
+    Message: "A faction has 15 members, 8 die in raid. How many survive?"
+    Type: Question
+    Answer: "7"
+    Reward: "give %player% golden_apple 5"
+
+  Territory_Math:
+    Message: "Your base is 20x20 blocks. What's the total area?"
+    Type: Question
+    Answer: "400"
+    Reward: "give %player% obsidian 16"
+
+  Raid_Problem:
+    Message: "You raid 4 chests with 8 diamonds each. Total diamonds?"
+    Type: Question
+    Answer: "32"
+    Reward: "give %player% diamond 10"
+
+  Power_Calculation:
+    Message: "Faction power decreases by 2 per death. 5 deaths = how much lost?"
+    Type: Question
+    Answer: "10"
+    Reward: "give %player% ender_pearl 8"
+
+  Armor_Scramble:
+    Message: "THELMET"
     Type: Scramble
-    Answer: "Water"
-    Reward: "give %player% diamond 32"
+    Answer: "HELMET"
+    Reward: "give %player% diamond_helmet 1"
+
+  Weapon_Scramble:
+    Message: "WOSRD"
+    Type: Scramble
+    Answer: "SWORD"
+    Reward: "give %player% diamond_sword 1"
+
+  Combat_Scramble:
+    Message: "TTABEL"
+    Type: Scramble
+    Answer: "BATTLE"
+    Reward: "give %player% diamond_chestplate 1"
+
+  Territory_Scramble:
+    Message: "ASEB"
+    Type: Scramble
+    Answer: "BASE"
+    Reward: "give %player% obsidian 32"
+
+  PvP_Scramble:
+    Message: "DAIR"
+    Type: Scramble
+    Answer: "RAID"
+    Reward: "give %player% tnt 16"
+
+  Loot_Scramble:
+    Message: "STHEC"
+    Type: Scramble
+    Answer: "CHEST"
+    Reward: "give %player% chest 5"
+
+  Power_Scramble:
+    Message: "NOITCAF"
+    Type: Scramble
+    Answer: "FACTION"
+    Reward: "give %player% golden_apple 3"
+
+  Elite_Math:
+    Message: "A killstreak of 10 gives 50 XP per kill bonus. Total bonus XP?"
+    Type: Question
+    Answer: "500"
+    Reward: "give %player% diamond_block 2"
+
+  Advanced_Combat:
+    Message: "Base defense: 25 obsidian, raid destroys 18. How many remain?"
+    Type: Question
+    Answer: "7"
+    Reward: "give %player% obsidian 25"
+
+  Hardcore_Scramble:
+    Message: "ERTSKALLI"
+    Type: Scramble
+    Answer: "KILLSTREAK"
+    Reward: "give %player% diamond_block 1"
+
+  Legendary_Challenge:
+    Message: "TIONMINAD"
+    Type: Scramble
+    Answer: "DOMINATION"
+    Reward: "give %player% nether_star 1"

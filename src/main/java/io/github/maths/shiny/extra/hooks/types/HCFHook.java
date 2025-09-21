@@ -1,7 +1,7 @@
-package io.github.maths.shiny.hooks.types;
+package io.github.maths.shiny.extra.hooks.types;
 
 
-import io.github.maths.shiny.hooks.Hook;
+import io.github.maths.shiny.extra.hooks.Hook;
 
 public interface HCFHook extends Hook {
     boolean hasSotwActive();

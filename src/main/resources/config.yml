@@ -1,12 +1,3 @@
-Storage-System:
-  mysql:
-    database:
-      host:
-      user:
-      password:
-      database:
-      port: 3306
-
 Auto-Save: true
 
 FreeRank:

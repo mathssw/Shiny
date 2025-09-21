@@ -1,18 +1,82 @@
 Prefixes:
-  Default: "&6[&eHighRoller&6]" # Do not change the name
+  Default: "&6[&eHighRoller&6]"
   Red: "&4[&cHighRoller&4]"
   Gray: "&8[&7HighRoller&8]"
+  Purple: "&5[&dHighRoller&5]"
+  Blue: "&1[&9HighRoller&1]"
+  Green: "&2[&aHighRoller&2]"
+  Aqua: "&3[&bHighRoller&3]"
+  Dark_Red: "&4[&4HighRoller&4]"
+  Pink: "&d[&5HighRoller&d]"
+  Elite: "&6[&c&lE&4&lL&c&lI&4&lT&c&lE&6] &6[&eHighRoller&6]"
+  Warrior: "&c⚔ &4[&cHighRoller&4] &c⚔"
+  Champion: "&6★ &e[&6HighRoller&e] &6★"
+  Legend: "&5✦ &d[&5HighRoller&d] &5✦"
+  Dominator: "&4▲ &c[&4HIGHROLLER&c] &4▲"
 
 Item:
-  Title: "&e%name%"
+  Title: "&c&l%name% Prefix"
   Description:
     - "&7&m----------------------"
-    - "&eLeft-Click to select this"
-    - "&eHigroller Prefix"
-    - "&a"
-    - "&eFormat: %format%"
+    - "&4&lHIGHROLLER PREFIX"
+    - ""
+    - "&eLeft-Click &7to equip this"
+    - "&eexclusive combat prefix"
+    - ""
+    - "&e&lPreview:"
+    - "&f%format% &7YourName&f: Hello world"
+    - ""
+    - "&e&lPerks:"
+    - "&7• &aStand out in chat"
+    - "&7• &aShow your elite status"
+    - "&7• &aUnlock exclusive features"
     - "&7&m----------------------"
+    - "&8&oClick to select this prefix style"
   Material: INK_SACK
   Selected-Data: 10
   Unselected-Data: 8
-  Glow: false
+  Glow: true
+
+Menu:
+  Title: "&4&lHighRoller Prefix Selector"
+  Size: 27
+  
+  Layout:
+    Default: 10
+    Red: 11
+    Gray: 12
+    Purple: 13
+    Blue: 14
+    Green: 15
+    Aqua: 16
+    Dark_Red: 19
+    Pink: 20
+    Elite: 21
+    Warrior: 22
+    Champion: 23
+    Legend: 24
+    Dominator: 25
+
+  Glass:
+    Material: STAINED_GLASS_PANE
+    Data: 14
+    Name: "&c"
+
+  Info_Item:
+    Material: NETHER_STAR
+    Slot: 4
+    Title: "&c&lHighRoller Privileges"
+    Description:
+      - "&7&m----------------------"
+      - "&4&lEXCLUSIVE BENEFITS"
+      - ""
+      - "&e&lYour Perks:"
+      - "&7• &aCustom chat prefixes"
+      - "&7• &aPriority support"
+      - "&7• &aExclusive commands"
+      - "&7• &aSpecial cosmetics"
+      - "&7• &aCombat advantages"
+      - ""
+      - "&4&lSTATUS: &aACTIVE"
+      - "&7&m----------------------"
+      - "&8&oEnjoy your elite privileges"

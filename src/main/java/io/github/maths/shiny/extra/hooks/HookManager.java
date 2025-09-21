@@ -1,12 +1,12 @@
-package io.github.maths.shiny.hooks;
+package io.github.maths.shiny.extra.hooks;
 
 import io.github.maths.shiny.Shiny;
-import io.github.maths.shiny.hooks.impl.hcf.AzuriteHook;
-import io.github.maths.shiny.hooks.impl.hcf.NoneHCFHook;
-import io.github.maths.shiny.hooks.impl.rank.AquaCoreHook;
-import io.github.maths.shiny.hooks.impl.rank.NoneRankHook;
-import io.github.maths.shiny.hooks.types.HCFHook;
-import io.github.maths.shiny.hooks.types.RankHook;
+import io.github.maths.shiny.extra.hooks.impl.hcf.AzuriteHook;
+import io.github.maths.shiny.extra.hooks.impl.hcf.NoneHCFHook;
+import io.github.maths.shiny.extra.hooks.impl.rank.AquaCoreHook;
+import io.github.maths.shiny.extra.hooks.impl.rank.NoneRankHook;
+import io.github.maths.shiny.extra.hooks.types.HCFHook;
+import io.github.maths.shiny.extra.hooks.types.RankHook;
 import io.github.maths.shiny.utils.ConfigurationFile;
 
 import java.util.ArrayList;

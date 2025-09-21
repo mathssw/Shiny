@@ -1,9 +1,8 @@
-package io.github.maths.shiny.storage;
+package io.github.maths.shiny.extra.storage;
 
 import io.github.maths.shiny.Shiny;
-import io.github.maths.shiny.managers.HighrollerManager;
-import io.github.maths.shiny.storage.impl.JSONProvider;
-import io.github.maths.shiny.storage.impl.MongoDBProvider;
+import io.github.maths.shiny.extra.storage.impl.JSONProvider;
+import io.github.maths.shiny.extra.storage.impl.MongoDBProvider;
 import io.github.maths.shiny.utils.ConfigurationFile;
 import io.github.maths.shiny.utils.chat.CC;
 
@@ -17,7 +16,7 @@ public class StorageManager {
     private StorageProvider fallbackProvider;
 
     public StorageManager() {
-        this.config = new ConfigurationFile(Shiny.getInstance(), "storage.yml");
+        this.config = new ConfigurationFile(Shiny.getInstance(), "impl/storage.yml");
         this.fallbackProvider = new JSONProvider();
         this.setupProvider();
     }

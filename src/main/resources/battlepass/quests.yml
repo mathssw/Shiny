@@ -1,10 +1,22 @@
 Quests:
   Example:
-    Title: "&aKill 3 Players"
+    Title: "&c&lPvP Domination"
     Description:
-      - "&aKill 3 Player"
-      - "&aand gain a reward"
-      - "&aProgress: &f%progress%"
+      - "&7&m-----------------------"
+      - "&c&lCOMBAT MISSION"
+      - ""
+      - "&e&lObjective:"
+      - "&f  Kill &c3 enemy players &fin PvP"
+      - "&f  Show no mercy in battle"
+      - ""
+      - "&e&lRewards:"
+      - "&f  &a+50 XP &7| &6Battlepass Progress"
+      - "&f  &bCombat Loot Box"
+      - ""
+      - "&e&lKill Progress:"
+      - "&f  &7[&c%progress%&7/&c3&7] &f%percentage% &7Complete"
+      - "&7&m-----------------------"
+      - "&8&oHunt your enemies without mercy"
     Material: DIAMOND_SWORD
     Day: 0
     XP: 50
@@ -13,13 +25,104 @@ Quests:
 
 Daily:
   Example:
-    Title: "&aKill 3 Players"
+    Title: "&4&lDaily Bloodshed"
     Description:
-      - "&aKill 3 Player"
-      - "&aand gain a reward"
-      - "&aProgress: &f%progress%"
+      - "&7&m-----------------------"
+      - "&4&lDAILY CHALLENGE &7- &fMap Day %day%"
+      - ""
+      - "&e&lMission:"
+      - "&f  Eliminate &43 players &ftoday"
+      - "&f  Prove your PvP dominance"
+      - ""
+      - "&e&lDaily Rewards:"
+      - "&f  &a+50 Combat XP"
+      - "&f  &6+1 Battlepass Tier"
+      - "&f  &5Random PvP Kit Component"
+      - ""
+      - "&e&lDaily Progress:"
+      - "&f  &7[&4%progress%&7/&43&7] &c%percentage% &7(&4%remaining% &7left)"
+      - ""
+      - "&f&lStatus: %status%"
+      - "&7&m-----------------------"
+      - "&7Resets in: &f%time_remaining%"
     Material: DIAMOND_SWORD
     Day: 0
     XP: 50
     Type: KillPlayer
     Amount: 3
+
+Capture_Quest:
+  Title: "&6&lTerritory Control"
+  Description:
+    - "&7&m-----------------------"
+    - "&6&lCONQUEST MISSION"
+    - ""
+    - "&e&lObjective:"
+    - "&f  Capture &65 enemy bases"
+    - "&f  Expand your faction's domain"
+    - ""
+    - "&e&lReward Pool:"
+    - "&f  &a+100 XP &7| &6+3 BP Tiers"
+    - "&f  &bFaction Power Boost"
+    - "&f  &dRare Base Materials"
+    - ""
+    - "&e&lCapture Progress:"
+    - "&f  &7[&6%progress%&7/&65&7] &f%percentage% &7Complete"
+    - "&7&m-----------------------"
+    - "&8&oConquer or be conquered"
+  Material: BANNER
+  Day: 1
+  XP: 100
+  Type: CaptureBase
+  Amount: 5
+
+# Ejemplo adicional - Quest de PvP streaks
+Streak_Quest:
+  Title: "&c&lKillstreak Master"
+  Description:
+    - "&7&m-----------------------"
+    - "&c&lCOMBAT CHALLENGE"
+    - ""
+    - "&e&lMission:"
+    - "&f  Achieve a &c10 killstreak"
+    - "&f  without dying once"
+    - ""
+    - "&e&lStreak Rewards:"
+    - "&f  &a+150 Combat XP"
+    - "&f  &c+Legendary PvP Kit"
+    - "&f  &5+Special Combat Title"
+    - ""
+    - "&e&lStreak Status:"
+    - "&f  &7[&c%progress%&7/&c10&7] &f%percentage% &7to Legend"
+    - "&7&m-----------------------"
+    - "&4&lWARNING: &7Death resets progress"
+  Material: SKULL_ITEM
+  Day: 2
+  XP: 150
+  Type: Killstreak
+  Amount: 10
+
+Loot_Quest:
+  Title: "&b&lResource Raid"
+  Description:
+    - "&7&m-----------------------"
+    - "&b&lRAIDING CONTRACT"
+    - ""
+    - "&e&lTarget:"
+    - "&f  Loot &b32 Diamond Blocks"
+    - "&f  from enemy territory"
+    - ""
+    - "&e&lRaid Rewards:"
+    - "&f  &a+80 Raider XP"
+    - "&f  &6+2 Battlepass Tiers"
+    - "&f  &9+Stealth Enhancement Kit"
+    - ""
+    - "&e&lLoot Collected:"
+    - "&f  &7[&b%progress%&7/&b32&7] &f%percentage% &7Stolen"
+    - "&7&m-----------------------"
+    - "&8&oThe strongest take everything"
+  Material: CHEST
+  Day: 3
+  XP: 80
+  Type: LootChest
+  Amount: 32

@@ -1,7 +1,6 @@
-package io.github.maths.shiny.hooks.impl.rank;
+package io.github.maths.shiny.extra.hooks.impl.rank;
 
-import io.github.maths.shiny.Shiny;
-import io.github.maths.shiny.hooks.types.RankHook;
+import io.github.maths.shiny.extra.hooks.types.RankHook;
 import me.activated.core.plugin.AquaCoreAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;

@@ -1,7 +1,7 @@
-package io.github.maths.shiny.hooks.impl.hcf;
+package io.github.maths.shiny.extra.hooks.impl.hcf;
 
 import io.github.maths.shiny.Shiny;
-import io.github.maths.shiny.hooks.types.HCFHook;
+import io.github.maths.shiny.extra.hooks.types.HCFHook;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import me.keano.azurite.HCF;

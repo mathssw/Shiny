@@ -1,7 +1,6 @@
-package io.github.maths.shiny.hooks.types;
+package io.github.maths.shiny.extra.hooks.types;
 
-import io.github.maths.shiny.hooks.Hook;
-import org.bukkit.entity.Player;
+import io.github.maths.shiny.extra.hooks.Hook;
 
 import java.util.UUID;
 
@@ -14,6 +13,6 @@ public interface RankHook extends Hook {
 
     @Override
     default String getType() {
-        return "RANK";
+        return "Rank";
     }
 }

@@ -1,11 +1,11 @@
-package io.github.maths.shiny.storage.impl;
+package io.github.maths.shiny.extra.storage.impl;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import io.github.maths.shiny.Shiny;
-import io.github.maths.shiny.storage.StorageProvider;
+import io.github.maths.shiny.extra.storage.StorageProvider;
 import io.github.maths.shiny.utils.chat.CC;
 import org.bson.Document;
 

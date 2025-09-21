@@ -1,8 +1,8 @@
 package io.github.maths.shiny.commands.cmd;
 
 import io.github.maths.shiny.Shiny;
-import io.github.maths.shiny.hooks.types.HCFHook;
-import io.github.maths.shiny.hooks.types.RankHook;
+import io.github.maths.shiny.extra.hooks.types.HCFHook;
+import io.github.maths.shiny.extra.hooks.types.RankHook;
 import io.github.maths.shiny.utils.chat.CC;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

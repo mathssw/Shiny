@@ -2,144 +2,242 @@ Main:
   Enabled: true
   Glass:
     Data: 14
-    Slots: [0, 1, 2, 6, 7, 8, 9, 10, 16, 17, 18, 26, 27, 35, 36, 37, 43, 44, 45, 46, 47, 51, 52, 53]
+    Slots:
+    - 0
+    - 1
+    - 2
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 16
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36
+    - 37
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 51
+    - 52
+    - 53
   Info:
-    Title: "&eWhat is the Battlepass?"
+    Title: '&c&lWhat is the Combat Pass?'
     Description:
-      - "&7&m-----------------------"
-      - "&eThe battlepass is a system where"
-      - "&eyou unlock rewards by completing"
-      - "&equests, Unlock Premium for more rewards"
-      - "&7&m-----------------------"
+    - '&7&m-----------------------'
+    - '&4&lCOMBAT PROGRESSION SYSTEM'
+    - ''
+    - '&eComplete PvP challenges and raids'
+    - '&eto unlock exclusive combat rewards'
+    - '&eUpgrade to Elite Pass for legendary loot'
+    - ''
+    - '&c&lBENEFITS:'
+    - '&7• &aExclusive PvP gear'
+    - '&7• &aCombat enhancements'
+    - '&7• &aFaction bonuses'
+    - '&7• &aRare materials'
+    - '&7&m-----------------------'
     Material: BOOK
     Data: 0
-    Glow: false
+    Glow: true
     Slot: 14
   Quests:
-    Title: "&e&lQuests"
+    Title: '&c&lCombat Missions'
     Description:
-      - "&7&m-----------------------"
-      - "&eHere you can find the quests"
-      - "&ethat will allow you to obtain"
-      - "&eXP for the Battlepass"
-      - "&7&m-----------------------"
-    Material: ENCHANTED_BOOK
+    - '&7&m-----------------------'
+    - '&4&lPVP CHALLENGES'
+    - ''
+    - '&eComplete deadly missions to earn'
+    - '&ecombat XP and advance your'
+    - '&eCombat Pass progression'
+    - ''
+    - '&c&lMISSION TYPES:'
+    - '&7• &cPlayer eliminations'
+    - '&7• &6Base raids'
+    - '&7• &5Territory conquest'
+    - '&7&m-----------------------'
+    Material: DIAMOND_SWORD
     Data: 0
-    Glow: false
+    Glow: true
     Slot: 34
   Rewards:
-    Title: "&e&lRewards"
+    Title: '&6&lCombat Rewards'
     Description:
-      - "&7&m-----------------------"
-      - "&eHere you can find the rewards"
-      - "&eof the battlepass, Do quests"
-      - "&eto upgrade your level"
-      - "&7&m-----------------------"
-    Material: STORAGE_MINECART
+    - '&7&m-----------------------'
+    - '&6&lWARRIOR ARSENAL'
+    - ''
+    - '&eUnlock powerful combat gear'
+    - '&eand exclusive battlefield items'
+    - '&eby completing missions'
+    - ''
+    - '&6&lREWARD TIERS:'
+    - '&7• &aFree Combat Rewards'
+    - '&7• &5Elite Pass Exclusives'
+    - '&7• &6Legendary Equipment'
+    - '&7&m-----------------------'
+    Material: CHEST
     Data: 0
-    Glow: false
+    Glow: true
     Slot: 30
   Stats:
-    Title: "&6&lStats"
+    Title: '&4&lCombat Statistics'
     Description:
-      - ""
-      - "&eInformation"
-      - "&e&l» &fLevel: &e%level%"
-      - "&e&l» &fXP: &e%xp%"
-      - "&e&l» &fDay: &e%day%"
-    Material: ANVIL
-    Data: 0
+    - '&7&m-----------------------'
+    - '&4&lWARRIOR PROFILE'
+    - ''
+    - "&c&l» &fCombat Level: &c%level%"
+    - "&c&l» &fBattle XP: &c%xp%"
+    - "&c&l» &fCampaign Day: &c%day%"
+    - "&c&l» &fRank: &6Elite Warrior"
+    - ''
+    - '&e&lNEXT UNLOCK:'
+    - '&7Legendary Combat Kit'
+    - '&7&m-----------------------'
+    Material: SKULL_ITEM
+    Data: 3
     Glow: false
     Slot: 32
+
 Quests:
   Item:
-    Title: "&e&lDay %day%"
+    Title: '&c&lCampaign Day %day%'
     Description:
-      - "&7&m-----------------------"
-      - "&eEvery two days new Quests are released"
-      - "&e"
-      - "&6Information:"
-      - "%information%"
-      - "&7&m-----------------------"
-    Enabled: "&e&l» &fCompleted: %completed%/7"
-    Disabled: "&e&l» &fReleases in: &e%time%"
+    - '&7&m-----------------------'
+    - '&4&lDAILY COMBAT MISSIONS'
+    - ''
+    - '&eNew deadly challenges every'
+    - '&etwo days. Conquer them all'
+    - '&eto prove your dominance'
+    - ''
+    - '&c&lMISSION STATUS:'
+    - '%information%'
+    - '&7&m-----------------------'
+    - '&8&oClick to view available missions'
+    Enabled: "&c&l» &fCompleted: &a%completed%&7/&a7"
+    Disabled: "&c&l» &fUnlocks in: &e%time%"
     Material: BOOK_AND_QUILL
     Data: 0
-    Glow: false
-    Slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] # El primer numero es el el primer day, podes poner en que lugar queres que vaya cada dia, no hace falta poner la misma cantidad de dias en los numeros pero si pone mas por q se bugea
+    Glow: true
+    Slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+
 Daily:
   Item:
-    Title: "&e&lDaily Quests"
+    Title: '&4&lDaily Warfare'
     Description:
-      - "&7&m-----------------------"
-      - "&eEvery two days new Quests are released"
-      - "&e"
-      - "&6Information:"
-      - "&e&l» &fCompleted: %completed%/3"
-      - "&e&l» &fEnds in: &e%time%"
-      - "&7&m-----------------------"
-    Material: BOOK_AND_QUILL
+    - '&7&m-----------------------'
+    - '&4&lDAILY COMBAT CHALLENGES'
+    - ''
+    - '&eFresh PvP missions reset every'
+    - '&eday. Complete them for bonus'
+    - '&ecombat XP and exclusive rewards'
+    - ''
+    - '&c&lDAILY PROGRESS:'
+    - "&c&l» &fCompleted: &a%completed%&7/&a3"
+    - "&c&l» &fResets in: &e%time%"
+    - ''
+    - '&6&lBONUS REWARDS:'
+    - '&7• &a+50% XP Boost'
+    - '&7• &bRare Combat Materials'
+    - '&7• &dExclusive Titles'
+    - '&7&m-----------------------'
+    Material: DIAMOND_SWORD
     Data: 0
-    Glow: false
+    Glow: true
     Slot: 27
 
 Announces:
-  Title: "&aNew Level Unlocked"
-  Subtitle: "&eLevel: %level%"
-  XP: "&aYou obtained %xp% from a Quest"
-  Pending: "&aYou have a pending reward to claim!"
+  Title: '&c&lCOMBAT LEVEL UP!'
+  Subtitle: '&6Level: &c%level% &6Unlocked'
+  XP: '&a&l+%xp% Combat XP &7earned from mission'
+  Pending: '&6&lNEW REWARD AVAILABLE! &eCheck your Combat Pass'
 
 Rewards:
   Multi-Reward:
-      Title: "&e&l%name%"
-      Description:
-          - "&7&m-----------------------"
-          - "&a"
-          - "&eInformation:"
-          - "&e&l» &fYou can only choose one reward"
-          - "&e&l» &fLeft-Click to claim"
-          - "&7&m-----------------------"
-      Material: BOOK
-      Data: 0
-      Glow: false
+    Title: '&6&l%name%'
+    Description:
+    - '&7&m-----------------------'
+    - '&6&lCHOOSE YOUR REWARD'
+    - ''
+    - '&c&lIMPORTANT:'
+    - "&c&l» &fYou can only select ONE reward"
+    - "&c&l» &fChoose wisely, warrior"
+    - "&c&l» &fLeft-Click to claim"
+    - ''
+    - '&e&lAvailable Options:'
+    - '&7View items below to decide'
+    - '&7&m-----------------------'
+    Material: NETHER_STAR
+    Data: 0
+    Glow: true
   Premium:
-    Title: "&e&l%title%"
+    Title: '&5&l%title%'
     Description:
-        - "&7&m-----------------------"
-        - "&7You need to purchase the premium"
-        - "&7to get this reward"
-        - "&7Purchase it &e@ store.koramc.us"
-        - "&a"
-        - "&eInformation:"
-        - "&e&l» &fType: &ePremium"
-        - "&e&l» &fStatus: %status%"
-        - ""
-        - "&eRewards:"
-        - "%rewards%"
-        - "&7&m-----------------------"
-    Material: BOOK
+    - '&7&m-----------------------'
+    - '&5&lELITE PASS EXCLUSIVE'
+    - ''
+    - '&7Upgrade to Elite Combat Pass'
+    - '&7to unlock this legendary reward'
+    - '&7Purchase at &estore.server.com'
+    - ''
+    - '&c&lREWARD INFO:'
+    - "&c&l» &fType: &5Elite Exclusive"
+    - "&c&l» &fStatus: %status%"
+    - ''
+    - '&5&lElite Rewards:'
+    - '%rewards%'
+    - '&7&m-----------------------'
+    - '&8&oUpgrade now for maximum power'
+    Material: ENDER_CHEST
     Data: 0
-    Glow: false
+    Glow: true
   Free:
-    Title: "&e&l%title%"
+    Title: '&a&l%title%'
     Description:
-        - "&7&m-----------------------"
-        - "&a"
-        - "&eInformation:"
-        - "&e&l» &fType: &eFree"
-        - "&e&l» &fStatus: %status%"
-        - ""
-        - "&eRewards:"
-        - "%rewards%"
-        - "&7&m-----------------------"
-    Material: BOOK
+    - '&7&m-----------------------'
+    - '&a&lFREE COMBAT REWARD'
+    - ''
+    - '&c&lREWARD DETAILS:'
+    - "&c&l» &fType: &aFree Tier"
+    - "&c&l» &fStatus: %status%"
+    - ''
+    - '&a&lFree Rewards:'
+    - '%rewards%'
+    - ''
+    - '&e&lTip: &7Upgrade to Elite Pass'
+    - '&7for 3x more exclusive rewards!'
+    - '&7&m-----------------------'
+    Material: CHEST
     Data: 0
     Glow: false
 
-
-Command: "setperm %player% Shiny.battlepass.premium %time%"
-
+Command: setperm %player% Shiny.battlepass.premium %time%
 Data:
   Day: 0
   Max-Days: 14
-  First-Date: ""
+  First-Date: 09/21/25
