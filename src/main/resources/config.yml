@@ -1,0 +1,72 @@
+Storage-System:
+  mysql:
+    database:
+      host:
+      user:
+      password:
+      database:
+      port: 3306
+
+Auto-Save: true
+
+FreeRank:
+  End-Date: "11/11/24 00:00:00"
+  # month/day/year - hour:minute:second
+  Timezone: "EST"
+  Command: "setrank %player% Vip %duration% global FreeRank"
+  Claim-Message: "&aEnjoy your free reward!"
+  Already-Claimed-Message: "&cYou already claimed this reward"
+  Disabled-Message: "&cThis reward is disabled, the last time it was enabled was %time%"
+  Unavailable-Message: "&cThis reward is only available for NameMC voters, Vote our server at namemc.com/servername.net"
+  NameMC-Not-Voted: "&cYou havent voted yet, vote us in namemc.com/servername.net"
+
+Join-Alert: true
+
+NameMC:
+  First-Vote: "&aThanks for voting us"
+  Command: "setperm prefix.check"
+
+Clean:
+  Enabled: true
+  Sotw-Time: 30
+  Normal-Time: 60
+
+Enderchest:
+  Cooldown: 10 # Seconds, Bypass: shiny.enderchest.bypass
+  Not-Storable: "&cYou cannot store that item!"
+  Rows:
+    1:
+      Title: "&a&lTier I"
+      Description:
+        - "&7Unlocked by default"
+      Data: 5
+    2:
+      Title: "&e&lTier II"
+      Description:
+        - "&7Unlock it by purchasing rank"
+      Data: 3
+    3:
+      Title: "&d&lTier III"
+      Description:
+        - "&7Unlock it by purchasing rank"
+      Data: 2
+    4:
+      Title: "&e&lTier IV"
+      Description:
+        - "&7Unlock it by purchasing rank"
+      Data: 4
+    5:
+      Title: "&6&lTier V"
+      Description:
+        - "&7Unlock it by purchasing rank"
+      Data: 9
+    6:
+      Title: "&5&lTier VI"
+      Description:
+        - "&7Unlock it by purchasing rank"
+      Data: 10
+    Disabled:
+      Title: "&c&lDisabled"
+      Description:
+        - "&7This row is not available"
+      Data: 14

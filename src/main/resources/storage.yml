@@ -1,0 +1,23 @@
+type: "json"
+
+mongodb:
+  host: "localhost"
+  port: 27017
+  database: "Shiny"
+  username: ""
+  password: ""
+  connection-timeout: 10000
+  socket-timeout: 5000
+
+json:
+  backup-enabled: true
+  backup-interval: 1440
+  compress-backups: true
+  max-backups: 7
+
+settings:
+  debug: false
+  async-operations: true
+  cache-enabled: true
+  cache-duration: 300
+  auto-save-interval: 300

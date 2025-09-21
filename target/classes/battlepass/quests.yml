@@ -1,0 +1,25 @@
+Quests:
+  Example:
+    Title: "&aKill 3 Players"
+    Description:
+      - "&aKill 3 Player"
+      - "&aand gain a reward"
+      - "&aProgress: &f%progress%"
+    Material: DIAMOND_SWORD
+    Day: 0
+    XP: 50
+    Type: KillPlayer
+    Amount: 3
+
+Daily:
+  Example:
+    Title: "&aKill 3 Players"
+    Description:
+      - "&aKill 3 Player"
+      - "&aand gain a reward"
+      - "&aProgress: &f%progress%"
+    Material: DIAMOND_SWORD
+    Day: 0
+    XP: 50
+    Type: KillPlayer
+    Amount: 3

@@ -1,0 +1,42 @@
+Enabled: true # You would need to restart the server to take effect
+Between-Time: 5 # How much minutes until the next question
+Chats-Time: 15 # Seconds that the questions will remain
+Message:
+  Question:
+    - "&e&m---------------------------------"
+    - "&e&lChat Reaction"
+    - "&6Resolve this Question to get a reward"
+    - "&6Question: &e%question%"
+    - "&e&m---------------------------------"
+  Scramble:
+    - "&e&m---------------------------------"
+    - "&e&lChat Reaction"
+    - "&6Unscramble this word to get a reward"
+    - "&6Word: &e%word%"
+    - "&e&m---------------------------------"
+  Win:
+    - "&e&m---------------------------------"
+    - "&e&lChat Reaction"
+    - "&a%player% &6Solved the Challenge in &e%time%"
+    - "&6The answer was: &e%word%"
+    - "&e&m---------------------------------"
+  End:
+    - "&e&m---------------------------------"
+    - "&e&lChat Reaction"
+    - "&6The challenge was not solved in time"
+    - "&6The answer was: &e%word%"
+    - "&e&m---------------------------------"
+  Player-Win: "&aCongratulations you solved the challenge and received a reward" # Leave empty to disable
+  Chat-Cancel: "&cThe Challenge was cancelled by a staff member"
+  Win-Message: true
+Chats:
+  Example:
+    Message: "How much is 7*7?"
+    Type: Question
+    Answer: "49"
+    Reward: "give %player% diamond 32"
+  Example1:
+    Message: "KoraMC"
+    Type: Scramble
+    Answer: "KoraMC"
+    Reward: "give %player% diamond 32"

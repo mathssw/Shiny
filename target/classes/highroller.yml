@@ -1,0 +1,18 @@
+Prefixes:
+  Default: "&6[&eHighRoller&6]" # Do not change the name
+  Red: "&4[&cHighRoller&4]"
+  Gray: "&8[&7HighRoller&8]"
+
+Item:
+  Title: "&e%name%"
+  Description:
+    - "&7&m----------------------"
+    - "&eLeft-Click to select this"
+    - "&eHigroller Prefix"
+    - "&a"
+    - "&eFormat: %format%"
+    - "&7&m----------------------"
+  Material: INK_SACK
+  Selected-Data: 10
+  Unselected-Data: 8
+  Glow: false

@@ -1,0 +1,145 @@
+Main:
+  Enabled: true
+  Glass:
+    Data: 14
+    Slots: [0, 1, 2, 6, 7, 8, 9, 10, 16, 17, 18, 26, 27, 35, 36, 37, 43, 44, 45, 46, 47, 51, 52, 53]
+  Info:
+    Title: "&eWhat is the Battlepass?"
+    Description:
+      - "&7&m-----------------------"
+      - "&eThe battlepass is a system where"
+      - "&eyou unlock rewards by completing"
+      - "&equests, Unlock Premium for more rewards"
+      - "&7&m-----------------------"
+    Material: BOOK
+    Data: 0
+    Glow: false
+    Slot: 14
+  Quests:
+    Title: "&e&lQuests"
+    Description:
+      - "&7&m-----------------------"
+      - "&eHere you can find the quests"
+      - "&ethat will allow you to obtain"
+      - "&eXP for the Battlepass"
+      - "&7&m-----------------------"
+    Material: ENCHANTED_BOOK
+    Data: 0
+    Glow: false
+    Slot: 34
+  Rewards:
+    Title: "&e&lRewards"
+    Description:
+      - "&7&m-----------------------"
+      - "&eHere you can find the rewards"
+      - "&eof the battlepass, Do quests"
+      - "&eto upgrade your level"
+      - "&7&m-----------------------"
+    Material: STORAGE_MINECART
+    Data: 0
+    Glow: false
+    Slot: 30
+  Stats:
+    Title: "&6&lStats"
+    Description:
+      - ""
+      - "&eInformation"
+      - "&e&l» &fLevel: &e%level%"
+      - "&e&l» &fXP: &e%xp%"
+      - "&e&l» &fDay: &e%day%"
+    Material: ANVIL
+    Data: 0
+    Glow: false
+    Slot: 32
+Quests:
+  Item:
+    Title: "&e&lDay %day%"
+    Description:
+      - "&7&m-----------------------"
+      - "&eEvery two days new Quests are released"
+      - "&e"
+      - "&6Information:"
+      - "%information%"
+      - "&7&m-----------------------"
+    Enabled: "&e&l» &fCompleted: %completed%/7"
+    Disabled: "&e&l» &fReleases in: &e%time%"
+    Material: BOOK_AND_QUILL
+    Data: 0
+    Glow: false
+    Slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] # El primer numero es el el primer day, podes poner en que lugar queres que vaya cada dia, no hace falta poner la misma cantidad de dias en los numeros pero si pone mas por q se bugea
+Daily:
+  Item:
+    Title: "&e&lDaily Quests"
+    Description:
+      - "&7&m-----------------------"
+      - "&eEvery two days new Quests are released"
+      - "&e"
+      - "&6Information:"
+      - "&e&l» &fCompleted: %completed%/3"
+      - "&e&l» &fEnds in: &e%time%"
+      - "&7&m-----------------------"
+    Material: BOOK_AND_QUILL
+    Data: 0
+    Glow: false
+    Slot: 27
+
+Announces:
+  Title: "&aNew Level Unlocked"
+  Subtitle: "&eLevel: %level%"
+  XP: "&aYou obtained %xp% from a Quest"
+  Pending: "&aYou have a pending reward to claim!"
+
+Rewards:
+  Multi-Reward:
+      Title: "&e&l%name%"
+      Description:
+          - "&7&m-----------------------"
+          - "&a"
+          - "&eInformation:"
+          - "&e&l» &fYou can only choose one reward"
+          - "&e&l» &fLeft-Click to claim"
+          - "&7&m-----------------------"
+      Material: BOOK
+      Data: 0
+      Glow: false
+  Premium:
+    Title: "&e&l%title%"
+    Description:
+        - "&7&m-----------------------"
+        - "&7You need to purchase the premium"
+        - "&7to get this reward"
+        - "&7Purchase it &e@ store.koramc.us"
+        - "&a"
+        - "&eInformation:"
+        - "&e&l» &fType: &ePremium"
+        - "&e&l» &fStatus: %status%"
+        - ""
+        - "&eRewards:"
+        - "%rewards%"
+        - "&7&m-----------------------"
+    Material: BOOK
+    Data: 0
+    Glow: false
+  Free:
+    Title: "&e&l%title%"
+    Description:
+        - "&7&m-----------------------"
+        - "&a"
+        - "&eInformation:"
+        - "&e&l» &fType: &eFree"
+        - "&e&l» &fStatus: %status%"
+        - ""
+        - "&eRewards:"
+        - "%rewards%"
+        - "&7&m-----------------------"
+    Material: BOOK
+    Data: 0
+    Glow: false
+
+
+Command: "setperm %player% Shiny.battlepass.premium %time%"
+
+Data:
+  Day: 0
+  Max-Days: 14
+  First-Date: ""

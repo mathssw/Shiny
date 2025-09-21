@@ -1,0 +1,31 @@
+Rewards:
+  Example:
+   Title: "Level 1"
+   Rewards:
+     - "x1 Diamond"
+   RewardType: Command
+   Command: "give %player% diamond 1"
+   Level: 1
+   Type: Free
+  Example2:
+   Title: "Level 1"
+   Rewards:
+     - "x1 Emerald or x5 Emeralds"
+   RewardType: MultiCommand
+   Command:
+     Emerald:
+       Name: "x1 Emerald"
+       Command: "give %player% emerald 1"
+     Emeralds:
+       Name: "x5 Emerald"
+       Command: "give %player% emerald 5"
+   Level: 1
+   Type: Premium
+  Example3:
+    Title: "Level 1"
+    Rewards:
+      - "x1 Emerald or x5 Emeralds"
+    RewardType: Item
+    Command: ""
+    Level: 1
+    Type: Premium

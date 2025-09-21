@@ -1,0 +1,38 @@
+name: Shiny
+version: 1.0
+main: io.github.maths.shiny.Shiny
+author: maths
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  tc:
+    description: Time changer command
+    aliases: [settime, timechanger]
+  namemc:
+    description: NameMC voting command
+    aliases: [vote]
+  shiny:
+    description: Main admin command
+    aliases: [shiny, sh]
+  hooks:
+    description: Hooks information command
+  highroller:
+    description: Highroller menu command
+    aliases: [highrollerprefix, highrollertag]
+  freerank:
+    description: Free rank command
+  freerankadmin:
+    description: Free rank admin command
+    aliases: [sfreerank, fra]
+  enderchest:
+    description: Enderchest command
+    aliases: [ec, enderc, chest]
+  chatreaction:
+    description: Chat reaction command
+    aliases: [chatreact]
+  battlepass:
+    description: Battlepass command
+    aliases: [bp, pass, battle]
+  bpadmin:
+    description: Battlepass admin command

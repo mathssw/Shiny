@@ -1,0 +1,40 @@
+Settings:
+  debug: false
+  auto-detect: true
+  cache-duration: 300
+
+HCF:
+  priority:
+    - "Azurite"
+
+  Azurite:
+    enabled: true
+    sotw-time: 30
+    normal-time: 60
+
+  Default:
+    sotw-time: 30
+    normal-time: 60
+
+Rank:
+  priority:
+    - "AquaCore"
+    - "LuckPerms"
+
+  AquaCore:
+    enabled: true
+    cache-duration: 300
+
+  LuckPerms:
+    enabled: true
+    cache-duration: 300
+
+  Default:
+    fallback-rank: "Default"
+    fallback-prefix: ""
+    fallback-suffix: ""
+
+Messages:
+  hook-enabled: "&a[Hooks] Loaded %hook_type% hook: &e%hook_name%"
+  hook-failed: "&c[Hooks] Failed to load %hook_type% hook: &c%hook_name%"
+  no-hooks-available: "&c[Hooks] No %hook_type% plugins found, using default"
